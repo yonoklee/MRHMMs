@@ -1,0 +1,60 @@
+Data.X.file.location  Xtest.dist   50000    8
+Data.Y.file.location  Ytest.dist   50000    2
+#model name
+model.name     singleMVN_regression
+num.state  2
+mix.comp   1
+Obs.loc Y  0  test.dist 
+
+
+INI.VALUES N
+ini.pi Y
+   0.5  0.5 
+ini.A  Y
+   0.5  0.5
+   0.5  0.5	
+ini.mu  N
+0 0 0 0 0 0 0 0
+1 1 1 1 1 1 1 1 
+ini.Sigma N
+ini.reg.coef  Y
+1 .1 1 1 1 1 1 1 1 
+2 .1 1 1 1 1 1 1 1
+1 .1 1 1 1 1 1 1 1 
+2 .1 1 1 1 1 1 1 1
+1 .1 1 1 1 1 1 1 1 
+2 .1 1 1 1 1 1 1 1
+1 .1 1 1 1 1 1 1 1 
+2 .1 1 1 1 1 1 1 1
+ini.reg.sd  Y
+.2 .1
+1 1
+.2 .1
+1 1
+.2 .1
+1 1
+.2 .1
+1 1
+END.INI.VALUES
+
+USER.PARAMETERS N
+reg.coef  Y 4
+u 0 0 0 0 0 0 0 0
+0 u 0 0 0 0 0 0 0 
+0 0 u 0 0 0 0 0 0
+0 0 0 u 0 0 0 0 0
+mu N
+END.USER.PARAMETERS
+
+	
+#Options
+Rep 1
+Tolerance 1
+Max.Itr 20
+
+
+
+#Output 
+output.filename testtest
+
+

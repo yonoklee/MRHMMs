@@ -1,0 +1,29 @@
+Examples: Data sets and an example input file
+HMM.initial
+Xtest.dist
+Ytest.dist
+test.dist
+logistic_Y_50000 
+
+Code:
+
+Makefile # Makefile 
+_struct.h # Definition of Structure variables
+HMM.main.c # The main file
+HMM.Read.Matrix.c  #Read an input file, Initial pi, A, etc 
+(HMM.Read.Matrix.h)
+gsl_BaumWelch.c # Baum Welch algorithm 
+(gsl_BaumWelch.h)
+forward.c # Forward algorithm
+backward.c # Backward algorithm
+baum.c # Compute Gamma and Xi  
+models_parallel.c # emission probability functions
+(models.h)
+viterbi.c # viterbi algorithm
+logmvNormal.c # Calculate Multivariate Normal density 
+(mvnorm.h)
+nrutil.c  # Memory allocation and free memory allocation
+(nrutil.h) 
+hmmutils.c  # Print results and outputs
+(hmm.h)
+hardEM.c 
